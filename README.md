@@ -2,7 +2,7 @@
 Пользовательский интерфейс для отправки и получений сообщений WhatsApp с использованием сервиса GREEN-API
 (https://green-api.com/).
 
-Проект онлайн на GitHubPages: https://arahnaaurum.github.io/Whats_App/
+Проект онлайн на Vercel: https://whats-app-sepia.vercel.app/
 
 ## Стек проекта
 React, TypeScript, CSS (Bootstrap или иные подобные библиотеки не использовались).
