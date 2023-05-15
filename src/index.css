@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-color: rgba(11, 20, 26, 0.1);
+}
+
+.App {
+  height: 100vh;
+}
+
+.header {
+  background-color: #00a884;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main {
+  height: calc(100% - 138px);
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 48px;
+}
+
+.form_group {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .form_group {
+    flex-direction: column;
+  }
+}
+
+.btn {
+  width: fit-content;
+  border: none;
+  background-color: unset;
+  align-self: center;
+}
+
+.btn_svg {
+  fill: rgba(11, 20, 26, 0.5);
+}
+
+.btn_svg:hover {
+  fill: rgba(11, 20, 26, 0.8);
+  transform: scale(0.9);
+}
+
+.input {
+  border: none;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.input:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.messages__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(239, 205, 149, 0.3);
+  padding: 0px 24px;
+}
+
+.message__form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message__input {
+  width: 95%;
+  padding: 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.message__input:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.messages__list{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 24px;
+  overflow: auto;
+}
+
+.author {
+  width: 35%;
+  background-color: #acfcac;
+  padding: 24px;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin: 8px 12px;
+}
+
+.not-author {
+  width: 35%;
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  align-self: flex-start;
+  margin: 8px 12px;
+}
+
+.message_text {
+  margin: 0;
+  line-height: 100%;
+}
+
+.message_time {
+  margin: 8px;
+  line-height: 100%;
+  font-size: 12px;
+  color: rgba(11, 20, 26, 0.3);
+  display: flex;
+  justify-content: flex-end;
+}
